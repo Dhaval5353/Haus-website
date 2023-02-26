@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-links li{
+  @apply ml-5 lg:mt-0 sm:mt-5 lg:text-black sm:text-white hover:text-[#0B8497];
+}

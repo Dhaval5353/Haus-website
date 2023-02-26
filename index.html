@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haus</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div>
+    <header class="header flex lg:justify-center sm:h-screen lg:h-min lg:bg-white">
+      <nav class="lg:flex lg:w-fit sm:w-[100%]">
+
+        <div class="flex items-center p-3">
+          <div class="close lg:hidden md:visible ml-3">
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl"></ion-icon>
+          </div>
+          <div class="flex lg:justify-start md:justify-center w-[100%] sm:justify-center">
+            <img class="image-dark  md:w-[250px]  md:h-[72px] sm:w-[150px] sm:h-[50px]"
+              src="./Images/hau_gitschberge_horizontal 1.png" alt="">
+            <img class="image-white sm:hidden  md:w-[250px]  md:h-[72px] sm:w-[150px] sm:h-[50px]"
+              src="./Images/Haus_Icon_white.png" alt="">
+          </div>
+        </div>
+
+
+
+        <div class="nav-links w-[100%] sm:hidden lg:inline-flex">
+          <ul
+            class="flex lg:justify-center lg:items-center lg:flex-row sm:flex-col lg:h-[100%] text-sm nav-ul lg:inline-flex">
+            <li class="lg:ml-14">
+              HOME
+            </li>
+            <li>
+              <select name="BLOG" id="BLOG" class=" sm:hidden lg:inline-block ">
+                <option value="volvo">BLOG</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+
+              <details class="lg:hidden">
+                <summary style="list-style: none">BLOG <span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                </summary>
+                <ul style="
+                    color: black;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                  ">
+                  <li>Link1</li>
+                  <li>Link2</li>
+                </ul>
+              </details>
+            </li>
+
+
+            <li>
+              <select name="BLOG" id="BLOG" class="bg-transparent sm:hidden lg:inline-block">
+                <option value="volvo">FEATURES</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+
+              <details class="lg:hidden">
+                <summary style="list-style: none">FEATURES <span><ion-icon
+                      name="chevron-down-outline"></ion-icon></span></summary>
+                <ul style="
+                    color: black;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                  ">
+                  <li>Link1</li>
+                  <li>Link2</li>
+                </ul>
+              </details>
+            </li>
+
+
+            <li>
+
+              <select name="BLOG" id="BLOG" class="bg-transparent sm:hidden lg:inline-block">
+                <option value="volvo">CATEGORIES</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+
+              <details class="lg:hidden">
+                <summary style="list-style: none">CATEGORIES <span><ion-icon
+                      name="chevron-down-outline"></ion-icon></span></summary>
+                <ul style="
+                    color: black;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                  ">
+                  <li>Link1</li>
+                  <li>Link2</li>
+                </ul>
+              </details>
+
+            </li>
+            <li>
+              ABOUT
+            </li>
+            <li>
+              CONTACT
+            </li>
+            <li>
+
+              <select name="BLOG" id="BLOG" class="bg-transparent sm:hidden lg:inline-block">
+                <option value="volvo">SHOP</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+
+              <details class="lg:hidden">
+                <summary style="list-style: none">SHOP <span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                </summary>
+                <ul style="
+                    color: black;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                  ">
+                  <li>Link1</li>
+                  <li>Link2</li>
+                </ul>
+              </details>
+
+            </li>
+            <li>
+              PORTFOLIO
+            </li>
+            <li>
+              <input
+                class="lg:block sm:hidden mt-[0.3rem] mr-2 h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-[rgba(0,0,0,0.46)] outline-none before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-white after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-black checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s]"
+                type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+  </div>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    const header = document.querySelector('.header')
+    const whiteimage = document.querySelector('.image-white')
+    const darkimage = document.querySelector('.image-dark')
+    const closebutton = document.querySelector('.close')
+    function onToggleMenu(e) {
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('sm:hidden')
+      header.classList.toggle('bg-[#04282D]')
+      darkimage.classList.toggle('sm:hidden')
+      whiteimage.classList.toggle('sm:hidden')
+      closebutton.classList.toggle('text-white')
+    }
+  </script>
+</body>
+
+</html>
